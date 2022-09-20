@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/app.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <h1>Alpha Digit Recognizer</h1>
+        <div class="draw-result">
+
+            <div id="sketch">
+                <canvas id="canvas"></canvas>
+            </div>
+
+            <div class="result">
+                <input type="text" class="show-result" maxlength="1" value="{{result}}" readonly>
+            </div>
+
+        </div>
+
+    </div>
+
+    <form action="{{ url_for('predict')}}"method="post">
+        <button type="submit" class="btn btn-primary btn-block btn-large">Recognise</button>
+    </form>
+    <form action="{{ url_for('eraser')}}"method="post">
+        <button type="submit" class="btn btn-primary btn-block btn-large">Eraser</button>
+    </form>
+
+
+    <script src="/static/js/app.js"></script>
+
+</body>
+
+</html>

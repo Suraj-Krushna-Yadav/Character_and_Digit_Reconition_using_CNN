@@ -1,0 +1,73 @@
+* {
+    font-family: sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  #settings {
+    display: block;
+    text-align: center;
+  }
+  
+  .main-container {
+    margin: 0 15px auto;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    gap: 50px;
+  
+  
+  }
+  
+  .draw-result {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 50px;
+    height: 40vh;
+  
+  }
+  
+  .show-result {
+    font-size: 200px;
+    width: 43vh;
+    height: 39vh;
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+  
+  
+  }
+  
+  
+  
+  #canvas {
+    border: 1px solid black;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
